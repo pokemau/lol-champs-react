@@ -1,4 +1,4 @@
-import JsonData from './assets/LOL_Info/Champ Info/championFull.json'
+import JsonData from './assets/LOL_Info/champ_info/championFull.json'
 
 //components
 import Champ from './Champ';
