@@ -16,6 +16,13 @@ body {
   display: flex;
 }
 
+/* navbar */
+.navbar {
+  text-align: center;
+  margin: .5em;
+  font-size: 1.2em;
+}
+
 
 /* left container */
 .left-container {
@@ -26,6 +33,7 @@ body {
 .champs {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .champ-cont {
   margin: .3em 0 0 .5em;
@@ -53,6 +61,23 @@ body {
 }
 .champ-loading-img {
   height: 25em;
+  padding: 0 1em 1em 1em;
+}
+.name-title {
+  margin-bottom: 1em;
+}
+.passive-info {
+  display: flex;
+}
+.skills-info-container, .passive-container{
+  padding: 1em;
+  border-bottom: 2px solid black;
+}
+.skills-info-container img, .passive-container img {
+  padding: 0 .5em .5em 0;
+}
+.skills-info-container h2, .passive-container h2 {
+  font-size: 1.2em;
 }
 .skill-infos {
   display: flex;

@@ -19,8 +19,10 @@ const ChampInfo = ({ indivData }) => {
         <img className="champ-loading-img" src={require(`./assets/LOL_Info/loading_images/${champId}_0.jpg`)} alt={champId} />
 
         <div className="champ-stats">
-          <h1>{champName}</h1>
-          <h3>{champTitle}</h3>
+          <div className="name-title">
+            <h1>{champName}</h1>
+            <h3>{champTitle}</h3>
+          </div>
           <p>{`HP: ${champStat.hp}`}</p>
           <p>{`MANA: ${champStat.mp}`}</p>
           <p>{`HP REGEN: ${champStat.hpregen}`}</p>
@@ -30,9 +32,11 @@ const ChampInfo = ({ indivData }) => {
       </div>
 
       <div className="champ-skills-container">
-        <div className="passive">
-          <img src={require(`./assets/LOL_Info/spell_images/passive/${indivData[1].passive.image.full}`)} alt="" />
-          <h1>{passiveName}</h1>
+        <div className="passive-container">
+          <div className="passive-info">
+            <img src={require(`./assets/LOL_Info/spell_images/passive/${indivData[1].passive.image.full}`)} alt={champName} />
+            <h2>{passiveName}</h2>
+          </div>
           <p dangerouslySetInnerHTML={{__html: passiveDesc}}></p>
         </div>
 
@@ -42,7 +46,7 @@ const ChampInfo = ({ indivData }) => {
               <div className="skill-infos">
                 <img src={require(`./assets/LOL_Info/spell_images/spell/${skill.image.full}`)} alt="" />
                 <div className="skillname">
-                  <h1 dangerouslySetInnerHTML={{__html: `${skill.name}`}}></h1>
+                  <h2 dangerouslySetInnerHTML={{__html: `${skill.name}`}}></h2>
                   <p dangerouslySetInnerHTML={{__html: `Cooldown: ${skill.cooldownBurn}`}}></p>
                 </div>
               </div>
