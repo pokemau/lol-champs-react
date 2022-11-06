@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap');
+
 * {
   padding: 0;
   margin: 0;
@@ -5,6 +7,11 @@
 }
 
 /* body */
+body {
+  background-color: rgb(207, 163, 81);
+  font-family: 'Rubik', sans-serif;
+
+}
 .body-container {
   display: flex;
 }
@@ -12,7 +19,7 @@
 
 /* left container */
 .left-container {
-  width: 50%;
+  width: 50vw;
   overflow: auto;
   height: 90vh;
 }
@@ -36,6 +43,17 @@
 
 
 /* right container */
+.basic-info {
+  display: flex;
+}
+.right-container {
+  width: 50vw;
+  height: 90vh;
+  overflow: auto;
+}
 .champ-loading-img {
   height: 25em;
+}
+.skill-infos {
+  display: flex;
 }
