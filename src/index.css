@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+/* body */
+.body-container {
+  display: flex;
+}
+
 
 /* left container */
 .left-container {
@@ -26,4 +31,11 @@
 }
 .champ-tile:hover {
   filter: brightness(130%);
+}
+
+
+
+/* right container */
+.champ-loading-img {
+  height: 25em;
 }
