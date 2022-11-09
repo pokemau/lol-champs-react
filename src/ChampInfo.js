@@ -11,12 +11,16 @@ const ChampInfo = ({ indivData }) => {
   const skills = indivData[1].spells;
 
   // console.log(indivData)
-  console.log(skills);
+  console.log(indivData[1].id);
 
   return (
     <div className="champ-info-container">
       <div className="basic-info">
-        <img className="champ-loading-img" src={require(`./assets/LOL_Info/loading_images/${champId}_0.jpg`)} alt={champId} />
+        <img
+          className="champ-loading-img"
+          src={require(`./assets/LOL_Info/loading_images/${champId}_0.jpg`)}
+          alt={champId}
+        />
 
         <div className="champ-stats">
           <div className="name-title">
@@ -34,23 +38,37 @@ const ChampInfo = ({ indivData }) => {
       <div className="champ-skills-container">
         <div className="passive-container">
           <div className="passive-info">
-            <img src={require(`./assets/LOL_Info/spell_images/passive/${indivData[1].passive.image.full}`)} alt={champName} />
+            <img
+              src={require(`./assets/LOL_Info/spell_images/passive/${indivData[1].passive.image.full}`)}
+              alt={champName}
+            />
             <h2>{passiveName}</h2>
           </div>
-          <p dangerouslySetInnerHTML={{__html: passiveDesc}}></p>
+          <p dangerouslySetInnerHTML={{ __html: passiveDesc }}></p>
         </div>
 
         <div className="champ-skills">
-          {skills.map(skill => (
+          {skills.map((skill) => (
             <div key={skill.id} className="skills-info-container">
               <div className="skill-infos">
-                <img src={require(`./assets/LOL_Info/spell_images/spell/${skill.image.full}`)} alt="" />
+                <img
+                  src={require(`./assets/LOL_Info/spell_images/spell/${skill.image.full}`)}
+                  alt=""
+                />
                 <div className="skillname">
-                  <h2 dangerouslySetInnerHTML={{__html: `${skill.name}`}}></h2>
-                  <p dangerouslySetInnerHTML={{__html: `Cooldown: ${skill.cooldownBurn}`}}></p>
+                  <h2
+                    dangerouslySetInnerHTML={{ __html: `${skill.name}` }}
+                  ></h2>
+                  <p
+                    dangerouslySetInnerHTML={{
+                      __html: `Cooldown: ${skill.cooldownBurn}`,
+                    }}
+                  ></p>
                 </div>
               </div>
-              <p dangerouslySetInnerHTML={{__html: `${skill.description}`}}></p>
+              <p
+                dangerouslySetInnerHTML={{ __html: `${skill.description}` }}
+              ></p>
             </div>
           ))}
         </div>
