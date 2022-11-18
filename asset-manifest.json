@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/lol-champs-react/static/css/main.15d91783.css",
-    "main.js": "/lol-champs-react/static/js/main.9e2ffe74.js",
+    "main.css": "/lol-champs-react/static/css/main.7261dcef.css",
+    "main.js": "/lol-champs-react/static/js/main.60416a87.js",
     "static/media/Hecarim_0.jpg": "/lol-champs-react/static/media/Hecarim_0.459e6b563c664a4da165.jpg",
     "static/media/Xerath_0.jpg": "/lol-champs-react/static/media/Xerath_0.0e4ac790f226885e0d07.jpg",
     "static/media/JarvanIV_0.jpg": "/lol-champs-react/static/media/JarvanIV_0.137d9bdf55c8e7ca8aeb.jpg",
@@ -74,7 +74,7 @@
     "static/media/Ornn_0.jpg": "/lol-champs-react/static/media/Ornn_0.a18399b724dc033b62ef.jpg",
     "static/media/Ahri_0.jpg": "/lol-champs-react/static/media/Ahri_0.e723aaa09e4694e58c4b.jpg",
     "static/media/Zeri_0.jpg": "/lol-champs-react/static/media/Zeri_0.83d6399f384859ee22ea.jpg",
-    "static/media/Fiddlesticks_0.jpg": "/lol-champs-react/static/media/Fiddlesticks_0.f81dbcd4abe4214a117c.jpg",
+    "static/media/FiddleSticks_0.jpg": "/lol-champs-react/static/media/FiddleSticks_0.f81dbcd4abe4214a117c.jpg",
     "static/media/Rell_0.jpg": "/lol-champs-react/static/media/Rell_0.a76f5ac8e297a6e2a427.jpg",
     "static/media/Fizz_0.jpg": "/lol-champs-react/static/media/Fizz_0.8180d25eb7c390ef8509.jpg",
     "static/media/Skarner_0.jpg": "/lol-champs-react/static/media/Skarner_0.1cb3105b1f375cd90e40.jpg",
@@ -327,11 +327,11 @@
     "static/media/Vladimir.png": "/lol-champs-react/static/media/Vladimir.8d6e5a84e5db2b3b7fec.png",
     "static/media/Khazix.png": "/lol-champs-react/static/media/Khazix.15ccc9430e6c0df37380.png",
     "index.html": "/lol-champs-react/index.html",
-    "main.15d91783.css.map": "/lol-champs-react/static/css/main.15d91783.css.map",
-    "main.9e2ffe74.js.map": "/lol-champs-react/static/js/main.9e2ffe74.js.map"
+    "main.7261dcef.css.map": "/lol-champs-react/static/css/main.7261dcef.css.map",
+    "main.60416a87.js.map": "/lol-champs-react/static/js/main.60416a87.js.map"
   },
   "entrypoints": [
-    "static/css/main.15d91783.css",
-    "static/js/main.9e2ffe74.js"
+    "static/css/main.7261dcef.css",
+    "static/js/main.60416a87.js"
   ]
 }
