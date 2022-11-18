@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap");
 
 * {
   padding: 0;
@@ -8,9 +8,8 @@
 
 /* body */
 body {
-  background-color: rgb(207, 163, 81);
-  font-family: 'Rubik', sans-serif;
-
+  background-color: #f26753;
+  font-family: "Rubik", sans-serif;
 }
 .body-container {
   display: flex;
@@ -19,10 +18,9 @@ body {
 /* navbar */
 .navbar {
   text-align: center;
-  margin: .5em;
+  margin: 0.5em;
   font-size: 1.2em;
 }
-
 
 /* left container */
 .left-container {
@@ -36,23 +34,30 @@ body {
   justify-content: center;
 }
 .champ-cont {
-  margin: .3em 0 0 .5em;
+  margin: 0.3em 0 0 0.5em;
 }
 .champ-tile {
   height: 5em;
   cursor: pointer;
   border-radius: 5px;
-  transition: .1s;
+  transition: 0.1s;
 }
 .champ-tile:hover {
   filter: brightness(130%);
 }
-
-
+.champ-link {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
 
 /* right container */
 .basic-info {
   display: flex;
+  width: 95%;
+  margin: 0.5em auto;
+  box-shadow: 0 0 10px #994437;
+  padding-top: 1em;
 }
 .right-container {
   width: 50vw;
@@ -69,14 +74,22 @@ body {
 .passive-info {
   display: flex;
 }
-.skills-info-container, .passive-container{
-  padding: 1em;
-  border-bottom: 2px solid black;
+.skills-info-container,
+.passive-container {
+  padding: 0.5em;
+  /* border-bottom: 2px solid black; */
+  width: 93%;
+  margin: 0.5em auto;
+  background-color: #f5b9b0;
+  border: 1px solid #e69b8f;
 }
-.skills-info-container img, .passive-container img {
-  padding: 0 .5em .5em 0;
+.skills-info-container img,
+.passive-container img {
+  margin: 0 0.5em 0.5em 0;
+  box-shadow: 0 0 10px rgb(21, 56, 70);
 }
-.skills-info-container h2, .passive-container h2 {
+.skills-info-container h2,
+.passive-container h2 {
   font-size: 1.2em;
 }
 .skill-infos {

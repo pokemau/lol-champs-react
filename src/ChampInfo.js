@@ -10,9 +10,6 @@ const ChampInfo = ({ indivData }) => {
   //skills
   const skills = indivData[1].spells;
 
-  // console.log(indivData)
-  console.log(indivData[1].id);
-
   return (
     <div className="champ-info-container">
       <div className="basic-info">
@@ -57,18 +54,17 @@ const ChampInfo = ({ indivData }) => {
                 />
                 <div className="skillname">
                   <h2
-                    dangerouslySetInnerHTML={{ __html: `${skill.name}` }}
-                  ></h2>
+                    dangerouslySetInnerHTML={{ __html: `${skill.name}` }}></h2>
                   <p
                     dangerouslySetInnerHTML={{
                       __html: `Cooldown: ${skill.cooldownBurn}`,
-                    }}
-                  ></p>
+                    }}></p>
                 </div>
               </div>
               <p
-                dangerouslySetInnerHTML={{ __html: `${skill.description}` }}
-              ></p>
+                dangerouslySetInnerHTML={{
+                  __html: `${skill.description}`,
+                }}></p>
             </div>
           ))}
         </div>
